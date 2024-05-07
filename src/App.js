@@ -1,6 +1,7 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
-import MyDiv from "./03/MyDiv";
+import MyList from "./04/MyList";
+// import MyDiv from "./03/MyDiv";
 // import logo from "./logo.svg";
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
                 </div>
             </header>
             <main className="h-screen py-4 flex items-center justify-center">
+                <MyList />
                 {/* <div className="flex items-center h-full justify-center"> */}
-                    <MyDiv />
-                    {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                {/* <MyDiv /> */}
+                {/* <img src={logo} className="App-logo" alt="logo" /> */}
                 {/* </div> */}
             </main>
             <footer className="bg-black text-gray-50 p-2 text-xs">
