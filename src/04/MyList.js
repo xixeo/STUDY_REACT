@@ -1,6 +1,7 @@
 import MyListData from "./MyListData.json";
 import MyListItem from "./MyListItem";
 
+
 export default function MyList() {
     // MyListData가 가지고 있는 imrUrl 다 가져오는 반복문
     // filter의 결과, map의 결과 모두 array
@@ -12,6 +13,7 @@ export default function MyList() {
             key={item.title}
         />
     ));
+
 
     return (
         <div className="flex flex-wrap w-full max-w-screen-lg">
