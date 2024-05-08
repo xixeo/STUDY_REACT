@@ -13,7 +13,7 @@ function App() {
                     <RiHome3Line className="text-teal-50" />
                 </div>
             </header>
-            <main className="h-screen py-4 flex items-center justify-center">
+            <main className="h-screen p-4 flex items-center justify-center">
                 <MyList />
                 {/* <div className="flex items-center h-full justify-center"> */}
                 {/* <MyDiv /> */}
