@@ -1,6 +1,7 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
-import MyList from "./04/MyList";
+import Lotto from "./05/Lotto";
+// import MyList from "./04/MyList";
 // import MyDiv from "./03/MyDiv";
 // import logo from "./logo.svg";
 
@@ -14,7 +15,8 @@ function App() {
                 </div>
             </header>
             <main className="h-screen p-4 flex items-center justify-center">
-                <MyList />
+                <Lotto/>
+                {/* <MyList /> */}
                 {/* <div className="flex items-center h-full justify-center"> */}
                 {/* <MyDiv /> */}
                 {/* <img src={logo} className="App-logo" alt="logo" /> */}
