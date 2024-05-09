@@ -1,5 +1,6 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
+// import BoxOffice1 from "./06/BoxOffice_1";
 import BoxOffice from "./06/BoxOffice";
 // import Lotto from "./05/Lotto";
 // import MyList from "./04/MyList";
@@ -17,6 +18,7 @@ function App() {
                 </div>
             </header>
             <main className="h-screen p-4 flex items-center justify-center">
+                {/* <BoxOffice1 /> */}
                 <BoxOffice/>
                 {/* <Lotto/> */}
                 {/* <MyList /> */}
