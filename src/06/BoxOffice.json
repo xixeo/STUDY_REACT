@@ -21,7 +21,8 @@
               "audiChange": "101.3",
               "audiAcc": "5790226",
               "scrnCnt": "2702",
-              "showCnt": "14172"
+              "showCnt": "14172",
+              "imgUrl" : "./img/20228797.jpg"
           },
           {
               "rnum": "2",
@@ -41,7 +42,8 @@
               "audiChange": "267.2",
               "audiAcc": "1443140",
               "scrnCnt": "600",
-              "showCnt": "919"
+              "showCnt": "919",
+              "imgUrl" : "./img/20236614.jpg"
           },
           {
               "rnum": "3",
