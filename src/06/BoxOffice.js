@@ -16,6 +16,8 @@ export default function BoxOffice() {
 
     const [dailyList, setDailyList] = useState([]);
     const [selMv, setSelMv] = useState();
+    const now = new Date();
+    const nowStr = now.toLocaleDateString()
 
     useEffect(() => {
         setDailyList(boxOffice.boxOfficeResult.dailyBoxOfficeList);
@@ -29,7 +31,10 @@ export default function BoxOffice() {
         // </div>
         <div className="w-full max-w-screen-lg p-5 h-full">
             <div className="flex flex-col">
-                <div className="text-2xl font-bold my-5 ">Daily Movie Chart</div>
+                <div className="flex justify-between items-end my-5 ">
+                <div className="text-2xl font-bold ">Daily Movie Chart</div>
+                <div>{nowStr}</div>
+                </div>
                 <table className="text-left text-sm font-light text-surface ">
                     <BoxOfficeTheader />
                     <BoxOfficeTbody dailyList={dailyList} setSelMv={setSelMv} />

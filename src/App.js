@@ -1,11 +1,11 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
 // import BoxOffice1 from "./06/BoxOffice_1";
-import BoxOffice from "./06/BoxOffice";
+// import BoxOffice from "./06/BoxOffice";
 // import Lotto from "./05/Lotto";
 // import MyList from "./04/MyList";
 // import MyDiv from "./03/MyDiv";
-// import MyClock from "./02/MyClock";
+import MyClock from "./02/MyClock";
 // import logo from "./logo.svg";
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
             </header>
             <main className="h-screen p-4 flex items-center justify-center">
                 {/* <BoxOffice1 /> */}
-                <BoxOffice/>
+                {/* <BoxOffice/> */}
                 {/* <Lotto/> */}
                 {/* <MyList /> */}
                 {/* <MyDiv /> */}
-                {/* <MyClock /> */}
+                <MyClock />
                 {/* <div className="flex items-center h-full justify-center"> */}
                 {/* <img src={logo} className="App-logo" alt="logo" /> */}
                 {/* </div> */}
