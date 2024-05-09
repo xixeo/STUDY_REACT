@@ -24,7 +24,7 @@ export default function BoxOffice_1() {
                                 {movie.movieNm}
                             </div>
                         </div>
-                        <p>일일 관객수: {movie.audiCnt}</p>
+                        <p>일일 관객수: {parseInt(movie.audiCnt.toLocaleString())}</p>
                         <p>누적 관객수: {movie.audiAcc}</p>
                         <div className="text-sm text-zinc-700">
                             {movie.openDt} 개봉
