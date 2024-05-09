@@ -20,19 +20,22 @@ export default function BoxOffice() {
     useEffect(() => {
         setDailyList(boxOffice.boxOfficeResult.dailyBoxOfficeList);
         setSelMv(dailyList[0]);
-    }, []);
+        console.log(dailyList, "eeee");
+    }, [dailyList]);
 
     return (
         // <div>
         //     <ul>{nm}</ul>
         // </div>
-        <div className="w-full p-5 h-full">
+        <div className="w-full max-w-screen-lg p-5 h-full">
             <div className="flex flex-col">
+                <div className="text-2xl font-bold my-5 ">Daily Movie Chart</div>
                 <table className="text-left text-sm font-light text-surface ">
-                    <BoxOfficeTheader />                 
-                    <BoxOfficeTbody dailyList={dailyList} setSelMv={setSelMv}/>{/* 메소드도 전달 가능 */}
+                    <BoxOfficeTheader />
+                    <BoxOfficeTbody dailyList={dailyList} setSelMv={setSelMv} />
+                    {/* 메소드도 전달 가능 */}
                 </table>
-                <BoxOfficeInfo selMv={selMv} />
+                {selMv && <BoxOfficeInfo selMv={selMv} />}
             </div>
         </div>
     );
