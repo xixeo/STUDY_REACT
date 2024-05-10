@@ -1,8 +1,18 @@
 import React from "react";
 
-export default function Btn({ caption, btnColor, btnRound, btnBorder, handleClick }) {
+export default function Btn({
+    caption,
+    btnColor,
+    color,
+    btnRound,
+    btnBorder,
+    borderColor,
+    handleClick,
+    height,
+    customClass
+}) {
     const bg = {
-        blue: "bg-blue-300",
+        blue: "bg-blue-500",
         orange: "bg-orange-300",
         red: "bg-red-300",
     };
@@ -21,25 +31,24 @@ export default function Btn({ caption, btnColor, btnRound, btnBorder, handleClic
         "r-f": "rounded-full",
     };
 
-    const border = {
-      "b-0": "border-0",
-      "b-1": "border",
-  };
-
-//   const borderColor = {
-//     "b-0": "border-0",
-//     "b-1": "border",
-// };
+    const borderW = {
+        "b-0": "border-0",
+        "b-1": "border",
+    };
 
     return (
         <button
             onClick={handleClick}
             className={`
-                                    hover:transition-allinline-flex px-10 py-3 justify-center items-center text-white font-bold
+                                    inline-flex px-4 justify-center items-center font-bold
                                     ${bg[btnColor]}
+                                    text-${color}
                                     ${bgHover[btnColor]}
                                     ${round[btnRound]}
-                                    ${border[btnBorder]}
+                                    ${borderW[btnBorder]}
+                                    border-${borderColor}
+                                    ${height}
+                                    ${customClass}
                                     `}
         >
             {caption}
