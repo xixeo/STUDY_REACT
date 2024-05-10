@@ -28,3 +28,7 @@ JSON 데이터를 사용해 카드 리스트 컴포넌트 만들기
 ### `06. BoxOffice.js`
 
 JSON 데이터를 사용해 Table tr 생성하기 / Row에 click 이벤트를 부여하기 ( 하위 컴포넌트로 probs, 함수 전달 )
+
+### `07. FoodCard.js`
+
+JSON 데이터를 사용해 Card 컴포넌트 만든 후 같은 카테고리만 묶어서 화면에 출력하기
