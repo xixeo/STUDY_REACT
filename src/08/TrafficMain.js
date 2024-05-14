@@ -98,8 +98,8 @@ export default function TrafficMain() {
 
     //중분류 선택  => 상세정보
     useEffect(() => {
-      if (!info) return;
-      
+      // if (!info) return;
+
         console.log("대분류선택 :", c1Sel);
         console.log("중분류선택 :", c2Sel);
         let tm = tdata.filter(
