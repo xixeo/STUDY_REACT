@@ -1,6 +1,7 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
-import FoodMain from "./07/FoodMain";
+import TrafficMain from "./08/TrafficMain";
+// import FoodMain from "./07/FoodMain";
 // import BoxOffice1 from "./06/BoxOffice_1";
 // import BoxOffice from "./06/BoxOffice";
 // import Lotto from "./05/Lotto";
@@ -19,7 +20,8 @@ function App() {
                 </div>
             </header>
             <main className="h-screen overflow-y-auto p-4 flex items-center justify-center">
-                <FoodMain/>
+                <TrafficMain/>
+                {/* <FoodMain/> */}
                 {/* <BoxOffice1 /> */}
                 {/* <BoxOffice/> */}
                 {/* <Lotto/> */}
