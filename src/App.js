@@ -1,6 +1,8 @@
 import "./App.css";
 import { RiHome3Line } from "react-icons/ri";
-import MyRef from "./09/MyRef";
+import Festival from "./11/Festival";
+// import Gallery from "./10/Gallery";
+// import MyRef from "./09/MyRef";
 // import Traffic from "./08_1/Traffic";
 // import TrafficMain from "./08/TrafficMain";
 // import FoodMain from "./07/FoodMain";
@@ -22,7 +24,9 @@ function App() {
                 </div>
             </header>
             <main className="h-screen overflow-y-auto p-4 flex items-center justify-center">
-                <MyRef/>
+                <Festival/>
+                {/* <Gallery/> */}
+                {/* <MyRef/> */}
                 {/* <Traffic/> */}
                 {/* <TrafficMain/> */}
                 {/* <FoodMain/> */}
