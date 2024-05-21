@@ -74,16 +74,16 @@ export default function Traffic() {
         ];
         console.log(infoKey, tm, 'infokkkk')
         tm = infoKey.map((item) => (
-            <div key={item} className=" ">
-                <div>{item}</div>
-                <div>{tm[item]}</div>
+            <div key={item} >
+                <div className="bg-slate-300 py-1 mt-3">{item}</div>
+                <div className="bg-slate-100 py-3">{tm[item]}</div>
             </div>
         ));
         setInfo(tm);
     }, [select2]);
 
     return (
-        <div className="w-full">
+        <div className="w-full max-w-3xl">
             <div>
                 {category1 && (
                     <TrafficNav

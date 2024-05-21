@@ -58,9 +58,9 @@ export default function Festival() {
     }, [tdata]);
 
     return (
-        <div className="w-full h-full flex flex-col justify-start items-start">
+        <div className="w-full max-w-screen-xl h-full flex flex-col justify-start items-center">
             <form className="w-full flex justify-center items-center">
-                <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 my-5">
+                <div className="w-2/5 grid grid-cols-1 md:grid-cols-2 my-5">
                     <label
                         htmlFor="op"
                         className="block text-xl font-bold

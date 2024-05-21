@@ -38,7 +38,7 @@ export default function Gallery() {
             .then((resp) => resp.json())
             .then((data) => {
                 console.log("fetch", data);
-                // setGdata(data.response.body.items.item);
+                setGdata(data.response.body.items.item);
             });
 
         console.log("getFetchData", url);

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export default function BoxOfficeInfo({ selMv }) {
     // console.log(selMv, "BoxOfficeInfo");
     return (
-        <div className="group w-full flex justify-center items-end py-4 mt-4 bg-black cursor-pointer">
+        <div className="group w-full flex justify-center items-end py-4 bg-black cursor-pointer">
             <span className="font-bold mr-4 text-xl text-white">
                 " {selMv.movieNm} "
             </span>

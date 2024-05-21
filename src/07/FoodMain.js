@@ -22,7 +22,7 @@ export default function FoodMain() {
 
     let btn = c1.map((item) => (
         <Btn
-            customClass={'text-[#222222] hover:bg-blue-50'}
+            customClass={'text-[#222222] hover:bg-blue-50 font-bold'}
             key={`${item}`}
             caption={`${item}`}
             handleClick={()=> {handleClick(item)}}
@@ -34,7 +34,7 @@ export default function FoodMain() {
 
     return (
         <div className="flex flex-col w-full h-full max-w-screen-lg">
-            <div className="flex w-full justify-center border-b">{btn}</div>
+            <div className="flex w-full justify-center">{btn}</div>
             <div className="mt-5 w-full grid grid-cols-1 md:grid-cols-2 box-border">
              {card}
             </div>

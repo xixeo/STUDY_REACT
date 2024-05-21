@@ -113,7 +113,7 @@ export default function TrafficMain() {
     }, [c2Sel]);
 
     return (
-        <div className="flex flex-col w-10/12 items-center h-full">
+        <div className=" max-w-xl flex flex-col items-center h-full">
             <div className="flex w-full border-b justify-center">{c1Tag}</div>
             <div className="mt-3">{c2Tag}</div>
             <span>사고건수  {parseInt(info).toLocaleString()}</span>
