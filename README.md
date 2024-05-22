@@ -1,4 +1,6 @@
-# Study React
+# Study React 
+
+### https://yiseo.vercel.app/
 
 ### `01. Hello.js 생성`
 
@@ -32,3 +34,22 @@ JSON 데이터를 사용해 Table tr 생성하기 / Row에 click 이벤트를 �
 ### `07. FoodCard.js`
 
 JSON 데이터를 사용해 Card 컴포넌트 만든 후 같은 카테고리만 묶어서 화면에 출력하기
+
+### `08. Traffic.js`
+
+공공 API 연결하여 데이터 분류하기 (대분류 -> 중분류 -> 소분류) 
+
+### `09. MyRef.js`
+
+useState, useRef 비교하여 사용해보기
+
+### `10. Gallery.js`
+
+키워드를 검색하여 조건에 맞는 데이터만 포토카드 컴포넌트 적용하여 화면에 출력하기
+
+### `11. Festival.js`
+
+select box를 사용하여 조건에 맞는 데이터만 컴포넌트 만들어 화면에 출력하기
+
+
+
