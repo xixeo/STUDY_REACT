@@ -13,6 +13,7 @@ export default function RouteNav() {
       <Btn caption="교통사고 통계" handleClick={()=>{navigate('/07')}} customClass={'text-white text-sm '} />
       <Btn caption="card" handleClick={()=>{navigate('/08')}} customClass={'text-white text-sm '} />
       <Btn caption="부산 축제 정보" handleClick={()=>{navigate('/09')}} customClass={'text-white text-sm '} />
+      <Btn caption="단기예보" handleClick={()=>{navigate('/10')}} customClass={'text-white text-sm '} />
        {/* <Link to="/01">🍦</Link> */}
     </div>
   )

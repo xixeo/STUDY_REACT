@@ -6,24 +6,26 @@ import RouteNav from "./components/Nav";
 // import RouteMain from "./12/RouteMain";
 import Festival from "./11/Festival";
 import Gallery from "./10/Gallery";
-import MyRef from "./09/MyRef";
+// import MyRef from "./09/MyRef";
 import Traffic from "./08_1/Traffic";
-import TrafficMain from "./08/TrafficMain";
+// import TrafficMain from "./08/TrafficMain";
 import FoodMain from "./07/FoodMain";
-import BoxOffice1 from "./06/BoxOffice_1";
+// import BoxOffice1 from "./06/BoxOffice_1";
 import BoxOffice from "./06/BoxOffice";
 import Lotto from "./05/Lotto";
 import MyList from "./04/MyList";
 import MyDiv from "./03/MyDiv";
 import MyClock from "./02/MyClock";
+import Frcst from "./13/Frcst";
+import FrcstList from "./13/FrcstList";
 // import logo from "./logo.svg";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App flex flex-col w-full h-screen overflow-y-auto ">
-                <header className="flex justify-between items-center text-3xl font-bold h-20 bg-cyan-500 text-teal-50 p-8 ">
-                    <div className="">리액트 실습</div>
+                <header className="lg:flex justify-between items-center text-3xl font-bold min-h-20 bg-cyan-500 text-teal-50 p-8 ">
+                    <div className="mb-5 lg:mb-0">리액트 실습</div>
                     <div className="flex items-center">
                         <RouteNav />
                         <Link to="/"> <RiHome3Line className="text-teal-50" /></Link>
@@ -42,6 +44,8 @@ function App() {
                         <Route path="/07" element={<Traffic />} />
                         <Route path="/08" element={<Gallery />} />
                         <Route path="/09" element={<Festival />} />
+                        <Route path="/10" element={<Frcst />} />
+                        <Route path="/11" element={<FrcstList />} />
                     </Routes>
                     {/* <RouteMain/> */}
                     {/* <Festival/> */}
