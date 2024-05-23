@@ -60,10 +60,10 @@ export default function Festival() {
     return (
         <div className="w-full max-w-screen-xl h-full flex flex-col justify-start items-center">
             <form className="w-full flex justify-center items-center">
-                <div className="w-2/5 grid grid-cols-1 md:grid-cols-2 my-5">
+                <div className="w-3/5 lg:w-2/5 grid grid-cols-1 md:grid-cols-2 my-5">
                     <label
                         htmlFor="op"
-                        className="block text-xl font-bold
+                        className="text-xl font-bold
                               inline-flex justify-center items-center mr-5
                              text-gray-900 dark:text-white"
                     >
@@ -84,8 +84,10 @@ export default function Festival() {
             <div
                 className="w-full grid grid-cols-1 
                     md:grid-cols-2 lg:grid-cols-3 
-                    gap-2"
-            >{cards}</div>
+                    gap-5 place-items-center"
+            >
+                {cards}
+            </div>
         </div>
     );
 }
