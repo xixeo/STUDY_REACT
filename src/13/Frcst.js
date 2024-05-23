@@ -12,7 +12,7 @@ export default function Frcst() {
   const [x, setX] = useState();
   const [y, setY] = useState();
   const [area, setArea] = useState();
-  const today =  new Date().toISOString().slice(0, 10);
+
 
   const inRef = useRef();
   const selRef = useRef();
@@ -58,7 +58,6 @@ export default function Frcst() {
                     grid grid-cols-1 md:grid-cols-2 p-2 gap-2">
           <InputBox id="dt"
                       type="date"
-                      defaultValue={today}
                       inRef={inRef} 
                       customClass={'bg-gray-50 border border-gray-300 text-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'}
                       />
