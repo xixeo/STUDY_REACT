@@ -19,6 +19,7 @@ import MyClock from "./02/MyClock";
 import Frcst from "./13/Frcst";
 import FrcstList from "./13/FrcstList";
 import RecoilMain from "./14/RecoilMain";
+import Rest from "./15/Rest";
 // import logo from "./logo.svg";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                         <Route path="/10" element={<Frcst />} />
                         <Route path="/11" element={<FrcstList />} />
                         <Route path="/12" element={<RecoilMain/>}/>
+                        <Route path="/13" element={<Rest/>}/>                   
                     </Routes>
                     {/* <RouteMain/> */}
                     {/* <Festival/> */}
