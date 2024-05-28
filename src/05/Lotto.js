@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Ball from "./Ball";
 import Btn from "./Btn";
+import { MdEdit } from "react-icons/md";
 
 export default function Lotto() {
     ////////////
@@ -34,17 +35,23 @@ export default function Lotto() {
     ////////////
 
     return (
-        <div className="flex flex-col justify-center border w-full p-10 max-w-2xl">
-            <div className="flex justify-center mb-10">
-                <Btn
-                    caption={"로또 번호 생성하기"}
-                    btnColor={"red"}
-                    btnRound={"r-md"}
-                    handleClick={handleClick}
-                    customClass={'px-4 py-2 text-white'}
-                />
+        <div className="flex flex-col w-full max-w-2xl h-full justify-start">
+            <div className="w-full flex items-center rounded-sm mb-12 bg-amber-500 py-3 px-3 text-white">
+                <MdEdit className="mr-2" />
+                겹치지 않는 7자리 난수를 생성하기
             </div>
-            <div className="w-full flex justify-center">{tags}</div>
+            <div className="justify-center border p-10">
+                <div className="flex justify-center mb-10">
+                    <Btn
+                        caption={"로또 번호 생성하기"}
+                        btnColor={"red"}
+                        btnRound={"r-md"}
+                        handleClick={handleClick}
+                        customClass={"px-4 py-2 text-white"}
+                    />
+                </div>
+                <div className="w-full flex justify-center">{tags}</div>
+            </div>
         </div>
     );
 }

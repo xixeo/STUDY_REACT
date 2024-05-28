@@ -3,6 +3,7 @@ import { useState } from "react";
 import fooddata from "./fooddata.json";
 import Btn from "../05/Btn";
 import FoodCard from "./FoodCard";
+import { MdEdit } from "react-icons/md";
 
 export default function FoodMain() {
   const [card, setCardList] = useState([]);
@@ -34,6 +35,11 @@ export default function FoodMain() {
 
     return (
         <div className="flex flex-col w-full h-full max-w-screen-lg">
+            
+            <div className="w-full flex items-center rounded-sm mb-6 bg-amber-500 py-3 px-3 text-white">
+                <MdEdit className="mr-2" />
+                api호출하여 데이터 필터링하기
+            </div>
             <div className="flex w-full justify-center">{btn}</div>
             <div className="mt-5 w-full grid grid-cols-1 md:grid-cols-2 box-border">
              {card}

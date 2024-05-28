@@ -1,6 +1,7 @@
 import GalleryCard from "./GalleryCard";
 import Btn from "../05/Btn";
 import { useState, useEffect, useRef } from "react";
+import { MdEdit } from "react-icons/md";
 
 export default function Gallery() {
     const [gdata, setGdata] = useState();
@@ -69,29 +70,47 @@ export default function Gallery() {
     }, [gdata]);
 
     return (
-        <div className="w-full h-full flex flex-col justify-start items-start">
-            <div className="w-full flex justify-center items-center my-5 h-40">
-                <input
-                    ref={inRef}
-                    type="text"
-                    id="txt1"
-                    placeholder="입력하세요."
-                />
-                <Btn
-                    caption="확인"
-                    customClass={"bg-black text-white mx-1"}
-                    handleClick={handleOk}
-                />
-                <Btn
-                    caption="취소"
-                    customClass={"bg-black text-white"}
-                    handleClick={handleClear}
-                />
+        <div className="w-full max-w-screen-xl h-full flex flex-col justify-start items-center">
+            <div className="w-full flex items-center rounded-sm mb-6 bg-amber-500 py-3 px-3 text-white">
+                <MdEdit className="mr-2" />
+                키워드 검색을 통해 api 데이터 필터링하기
+            </div>
+            <div className="w-3/5 lg:w-2/5 grid grid-cols-1 md:grid-cols-2 my-5">
+                <label
+                    htmlFor="op"
+                    className="text-xl font-bold w-full
+                              inline-flex justify-center items-center mb-5 md:mb-0 mr-5
+                             text-gray-900 dark:text-white"
+                >
+                    부산 관광정보
+                </label>
+                <div className="flex justify-center">
+                    <input
+                        className="border p-2 rounded-sm"
+                        ref={inRef}
+                        type="text"
+                        id="txt1"
+                        placeholder="태종대"
+                    />
+
+                    <Btn
+                        caption="확인"
+                        customClass={
+                            "bg-orange-500 py-2 rounded-sm text-white mx-1"
+                        }
+                        handleClick={handleOk}
+                    />
+                    <Btn
+                        caption="취소"
+                        customClass={"bg-orange-500 py-2 rounded-sm text-white"}
+                        handleClick={handleClear}
+                    />
+                </div>
             </div>
             <div
                 className="w-full grid grid-cols-1 
                     md:grid-cols-2 lg:grid-cols-3 
-                    gap-2"
+                    gap-5 place-items-center"
             >
                 {cards}
             </div>

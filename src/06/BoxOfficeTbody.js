@@ -9,7 +9,7 @@ export default function BoxOfficeTbody({ dailyList, setSelMv }) {
   const tags = dailyList.map(item =>
     <tr key={item.movieCd} 
         onClick={() => {handleMvSelect(item)} }
-      className="border-b border-neutral-200 hover:bg-neutral-100 ">
+      className="border-b border-neutral-200 hover:bg-neutral-100 cursor-pointer">
       <td className="whitespace-nowrap px-6 py-3 font-medium">{item.rank}</td>
       <td className="whitespace-nowrap px-6 py-3">{item.movieNm}</td>
       <td className="whitespace-nowrap px-6 py-3 text-right">{parseInt(item.salesAcc).toLocaleString()}</td>

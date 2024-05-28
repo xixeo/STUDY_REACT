@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import TrafficNav from "./TrafficNav";
+import { MdEdit } from "react-icons/md";
 
 export default function Traffic() {
     const [tdata, setTdata] = useState(); // fetch 데이터
@@ -72,9 +73,9 @@ export default function Traffic() {
             "경상자수",
             "부상신고자수",
         ];
-        console.log(infoKey, tm, 'infokkkk')
+        console.log(infoKey, tm, "infokkkk");
         tm = infoKey.map((item) => (
-            <div key={item} >
+            <div key={item}>
                 <div className="bg-slate-300 py-1 mt-3">{item}</div>
                 <div className="bg-slate-100 py-3">{tm[item]}</div>
             </div>
@@ -83,8 +84,12 @@ export default function Traffic() {
     }, [select2]);
 
     return (
-        <div className="w-full max-w-3xl">
-            <div>
+        <div className="w-full max-w-3xl h-full flex flex-col items-start">
+            <div className="w-full flex items-center rounded-sm mb-6 bg-amber-500 py-3 px-3 text-white">
+                <MdEdit className="mr-2" />
+                api 호출하여 데이터 분류하기
+            </div>
+            <div className="w-full">
                 {category1 && (
                     <TrafficNav
                         title="대분류"
@@ -94,7 +99,7 @@ export default function Traffic() {
                     />
                 )}
             </div>
-            <div className="mt-2">
+            <div className="mt-2 w-full">
                 {category2 && (
                     <TrafficNav
                         title="중분류"
@@ -104,7 +109,9 @@ export default function Traffic() {
                     />
                 )}
             </div>
-            <div className="mt-2 w-full grid grid-cols-5 text-center">{info}</div>
+            <div className="mt-2 w-full grid grid-cols-5 text-center">
+                {info}
+            </div>
         </div>
     );
 }

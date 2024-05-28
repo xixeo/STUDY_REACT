@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Btn from "../05/Btn";
+import { MdEdit } from "react-icons/md";
 
 export default function TrafficMain() {
     const [tdata, setTdata] = useState([]); //전체 fetch 데이터
@@ -114,6 +115,7 @@ export default function TrafficMain() {
 
     return (
         <div className=" max-w-xl flex flex-col items-center h-full">
+
             <div className="flex w-full border-b justify-center">{c1Tag}</div>
             <div className="mt-3">{c2Tag}</div>
             <span>사고건수  {parseInt(info).toLocaleString()}</span>

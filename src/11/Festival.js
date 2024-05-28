@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import SelectBox from "../components/SelectBox";
 import GalleryCard from "../10/GalleryCard";
+import { MdEdit } from "react-icons/md";
 
 export default function Festival() {
     const [tdata, setTdata] = useState(); //부산 축제 정보
@@ -58,13 +59,17 @@ export default function Festival() {
     }, [tdata]);
 
     return (
-        <div className="w-full max-w-screen-xl h-full flex flex-col justify-start items-center">
-            <form className="w-full flex justify-center items-center">
-                <div className="w-3/5 lg:w-2/5 grid grid-cols-1 md:grid-cols-2 my-5">
+        <div className="w-full max-w-screen-xl h-auto min-h-full flex flex-col justify-start items-start">
+            <div className="w-full flex items-center rounded-sm mb-6 bg-amber-500 py-3 px-3 text-white">
+                <MdEdit className="mr-2" />
+                selec를 통해 api 데이터 필터링하기
+            </div>
+            <form className="w-full flex justify-center items-center h-full">
+                <div className="w-3/5 lg:w-2/5 grid grid-cols-1 md:grid-cols-2 my-5 h-full">
                     <label
                         htmlFor="op"
                         className="text-xl font-bold
-                              inline-flex justify-center items-center mr-5
+                              inline-flex justify-center items-center mb-5 md:mb-0 mr-5
                              text-gray-900 dark:text-white"
                     >
                         부산축제정보
@@ -76,7 +81,7 @@ export default function Festival() {
                             ops={ops}
                             initText="---부산 지역 구 선택 ---"
                             handleChange={handleGuSelect}
-                            customClass={'border p-2'}
+                            customClass={"border p-2"}
                         />
                     )}
                 </div>

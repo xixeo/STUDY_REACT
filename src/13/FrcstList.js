@@ -122,7 +122,7 @@ export default function FrcstList() {
 
     return (
         <div className="w-full max-w-2xl flex flex-col items-start justify-start h-full">
-            <div className="w-full lg:flex items-center text-2xl font-bold mb-5">
+            <div className="w-full lg:flex items-center text-2xl font-bold my-5">
                 <div className="mb-4 lg:mb-0 lg:w-2/3">
                     <span className="text-amber-500 mr-2">{area}</span> {gubun}
                     예보
@@ -141,16 +141,16 @@ export default function FrcstList() {
             <table className="text-left text-sm font-light text-surface w-full">
                 <thead className="border-b border-neutral-200 font-medium">
                     <tr className="bg-black text-white font-bold">
-                        <th scope="col" className="px-6 py-3 text-center">
+                        <th scope="col" className="px-6 py-3 text-center w-1/4">
                             항목명
                         </th>
-                        <th scope="col" className="px-6 py-3 text-center">
+                        <th scope="col" className="px-6 py-3 text-center w-1/4" >
                             예측일자
                         </th>
-                        <th scope="col" className="px-6 py-3 text-center">
+                        <th scope="col" className="px-6 py-3 text-center w-1/4" >
                             예측시간
                         </th>
-                        <th scope="col" className="px-6 py-3 text-center">
+                        <th scope="col" className="px-6 py-3 text-center w-1/4" >
                             항목값
                         </th>
                     </tr>

@@ -13,7 +13,7 @@ export default function RecoilDiv1() {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center items-start text-2xl font-bold">
+        <div className="w-full flex flex-col justify-center items-center text-2xl font-bold">
             <div>
                 RecoilDiv: n = {n}, n2= {n2}
             </div>
